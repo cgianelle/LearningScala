@@ -3,7 +3,7 @@ import scala.io.StdIn.readLine;
 object SayingHello {
 
   def createGreeting(name: String): String = {
-  	return String.format("Hello, %s, nice to meet you!", name)
+  	return "Hello, %s, nice to meet you!".format(name)
   }
 
   def output(message: String) = {
