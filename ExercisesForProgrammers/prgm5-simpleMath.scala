@@ -28,15 +28,15 @@ object SimpleMath {
         return outputLB        
     }
 
-  	def main(args: Array[String]): Unit = {
-    	val input1 = scala.io.StdIn.readLine("What is the first number? ")
-    	val input2 = scala.io.StdIn.readLine("What is the second number? ")
+    def main(args: Array[String]): Unit = {
+        val input1 = scala.io.StdIn.readLine("What is the first number? ")
+        val input2 = scala.io.StdIn.readLine("What is the second number? ")
 
-    	try {
+        try {
             val funcList = List(addNumbers _, subNumbers _, multNumbers _, divNumbers _)
             buildLB(funcList, input1.toInt, input2.toInt).map(x => println(x))
-		} catch {
-			case nfe: NumberFormatException => nfe.printStackTrace
-		}
-  	}
+        } catch {
+            case nfe: NumberFormatException => nfe.printStackTrace
+        }
+    }
 }
